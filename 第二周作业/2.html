@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人健康汇报表</title>
+</head>
+<body>
+    
+    <center>
+        <form action="" method="POST">
+            <table border="1">
+                <h2><font face = "黑体"><center>个人健康汇报表</center></font></h2>
+                <br><tr>
+                    <td>姓&nbsp;&nbsp;名:</td>
+                    <td><input type="text" name="name"></td>    
+                </tr>
+                <tr>
+                    <td>姓&nbsp;&nbsp;别:</td>
+                    <td>
+                        <input type="radio" name="sex" value="男">男
+                        <input type="radio" name="sex" value="女">女
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>所&nbsp;在&nbsp;省&nbsp;份:</td>
+                    <td><select name="sheng">
+                        <option value="省" checked>省</option>
+                        <option value="山西省">山西省</option>
+                        <option value="陕西省">陕西省</option>
+                        <option value="东北省">东北省</option>
+                        <option value="湖北省">湖北省</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>详&nbsp;细&nbsp;住&nbsp;址:</td>
+                    <td><input type="text" name="location"></td>    
+                </tr>
+                <tr>
+                    <td>近期是否出现如下症状（可多选）</td><br>
+                    <td>
+                        <input type="checkbox" name="inst" value="发热">发热
+                        <input type="checkbox" name="inst" value="咳嗽">咳嗽
+                        <input type="checkbox" name="inst" value="恶心">恶心
+                        <input type="checkbox" name="inst" value="乏力">乏力
+                        <input type="checkbox" name="inst" value="无">无
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>近&nbsp;期&nbsp;行&nbsp;程:</td>
+                    <td><textarea name="note" id="" cols="35" rows="5"></textarea></td>
+                </tr>
+
+            </table>
+            <tr>
+                <td colspan="2" align="center"></td>
+                <input type="submit" value="提交"> &nbsp;&nbsp;
+                <input type="reset" value="重置">
+            </tr>
+        </form>
+    </center>
+</body>
+</html>
